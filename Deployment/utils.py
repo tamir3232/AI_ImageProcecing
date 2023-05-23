@@ -16,7 +16,6 @@ def gen_labels():
                                                         class_mode = 'sparse')
     labels = (train_generator.class_indices)
     labels = dict((v,k) for k,v in labels.items())
-
     return labels
 
 def preprocess(image):
